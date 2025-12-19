@@ -1,4 +1,4 @@
-versoin: 1
+version: 1
 frontend:
   phases:
     preBuild:
@@ -6,12 +6,12 @@ frontend:
         - npm install -g pnpm
         - pnpm install
     build:
-        commands:
+      commands:
         - pnpm run build
-    artifacts:
-      baseDirectory: dist
-      files:
-        - '**/*'
-    cache:
-      paths:
-        - node_modules/**/*
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
